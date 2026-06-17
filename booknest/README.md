@@ -40,10 +40,10 @@ BookNest is a full-stack online bookstore developed using React, Node.js, Expres
 **Project Structure**
 
 booknest/
-|
-|- frontend/
-|- backend/
-|- README.md
+
+ frontend/
+ backend/
+ README.md
 
 **Installation**
 
