@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream-50 text-espresso-800 dark:bg-espresso-950 dark:text-espresso-100;
+  }
+}
+
+/* Custom Scrollbar for cozy library feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-100 dark:bg-espresso-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cream-300 dark:bg-espresso-800 rounded-full hover:bg-espresso-500 dark:hover:bg-espresso-500;
+}
+
+/* Staggered Masonry Pinterest-style Grid */
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 24px;
+}
+
+/* Rich Micro-animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+/* Glassmorphism overlays */
+.glass-panel {
+  @apply bg-white/70 dark:bg-espresso-950/70 backdrop-blur-md border border-white/20 dark:border-espresso-900/20;
+}
